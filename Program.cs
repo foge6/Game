@@ -1,4 +1,4 @@
-﻿int[,] CreateMassiveForPlay ()
+int[,] CreateMassiveForPlay ()
 {
 int[,] game = new int [3,3];
 for (int i = 0; i < 3; i++)
@@ -78,7 +78,16 @@ array[1,1] == 1 &&
 array[2,2] == 1) ||
 (array[0,2] == 1 &&
 array[1,1] == 1 &&
-array[2,0] == 1)
+array[2,0] == 1) ||
+(array[0,0] == 1 &&
+array[1,0] == 1 &&
+array[2,0] == 1) ||
+(array[0,1] == 1 &&
+array[1,1] == 1 &&
+array[2,1] == 1) ||
+(array[0,2] == 1 &&
+array[1,2] == 1 &&
+array[2,2] == 1)
 )
 {
     System.Console.WriteLine("Player 1 - Winner");
@@ -99,8 +108,16 @@ array[1,1] == 2 &&
 array[2,2] == 2) ||
 (array[0,2] == 2 &&
 array[1,1] == 2 &&
-array[2,0] == 2)
-)
+array[2,0] == 2)||
+(array[0,0] == 1 &&
+array[1,0] == 1 &&
+array[2,0] == 1) ||
+(array[0,1] == 1 &&
+array[1,1] == 1 &&
+array[2,1] == 1) ||
+(array[0,2] == 1 &&
+array[1,2] == 1 &&
+array[2,2] == 1) )
 {
     System.Console.WriteLine("Player 2 -Winner");
     ret = 2;
